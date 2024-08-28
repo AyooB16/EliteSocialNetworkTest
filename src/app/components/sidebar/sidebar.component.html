@@ -1,0 +1,35 @@
+<div class="py-2 pl-28 space-y-3 sticky top-0">
+  <div class="block px-2 text-blue-400 text-3xl">
+    <span><img src="./assets/logo.png" /></span>
+  </div>
+  <a
+    [routerLink]="['/home']"
+    routerLinkActive="text-blue-400"
+    class="block py-2 px-2 text-blue-400 text-xl"
+  >
+    <i class="fa fa-home mr-2"></i><span class="font-extrabold"> Home</span>
+  </a>
+
+  <a
+    [routerLink]="['/myposts']"
+    routerLinkActive="text-blue-400"
+    class="block py-2 px-2 text-blue-400 text-xl"
+  >
+    <i class="fa fa-list-ol mr-4"></i>
+    <span class="font-semibold"> My Posts</span>
+  </a>
+  <div
+    class="block group py-2 px-2 text-gray-700 hover:bg-blue-100 rounded-3xl hover:text-blue-400 text-xl"
+  >
+    <i class="fa fa-user-circle mr-4"></i>
+    <span class="font-semibold group-hover:text-blue-400 text-black">
+      Profile</span
+    >
+  </div>
+
+  <div
+    class="block py-3 px-2 bg-blue-400 shadow text-white text-center mr-6 font-bold rounded-3xl"
+  >
+    <button (click)="logout()" class="inline-block">Logout</button>
+  </div>
+</div>

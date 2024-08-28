@@ -1,0 +1,22 @@
+@if (loading) {
+<app-loading></app-loading>
+}@else {
+
+<body class="antialiased h-screen">
+  <div class="flex">
+    <!-- Menu -->
+    <div class="w-1/4 border-r bg-white hidden md:block">
+      <app-sidebar></app-sidebar>
+    </div>
+    <!-- News Content -->
+    <div class="md:w-2/5 border-r bg-gray-50">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- Follow and trends -->
+    <div class="flex-1 py-4 pl-10 pr-28 space-y-4 bg-white hidden md:block">
+      <app-profile-card></app-profile-card>
+    </div>
+  </div>
+</body>
+
+}
